@@ -1,4 +1,4 @@
-# Script Merubah kumpulan nama file dalam suaty folder
+# Script Merubah kumpulan nama file dalam suatu folder
 ## script dibuat menggunakan node.js
 created by : Benhard Sim
 
