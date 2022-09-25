@@ -49,9 +49,10 @@ rl.question('Masukkan PATH dari directory yang mau diganti : ', (dirLoc) => {
             fs.readdir(dirLocation, (err, fileNames) => {
                 if (err) throw err;
                 try {
+                    fileNames.sort();
                     fileNames.forEach((file, idx) => {
                         // membuat path folder full dari file lama dan file baru yang akan dibuat
-                        let newName = `${fileName}_${idx + 1}.${exten}`;
+                        let newName = `${fileName}-${idx+100000}.${exten}`;
                         let newNamePath = path.join(dirLocation, newName);
                         let oldNamePath = path.join(dirLocation, file);;
                         try {
